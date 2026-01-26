@@ -9,7 +9,7 @@ public class Supporting
     /// Prints the current Tic-Tac-Toe board to the console.
     /// </summary>
     /// <param name="board">A string array of length 9 representing the game board.</param>
-    public static void PrintBoard(string[] board)
+    public void PrintBoard(string[] board)
     {
         Console.WriteLine();
         Console.WriteLine($" {board[0]} | {board[1]} | {board[2]}");
@@ -29,7 +29,7 @@ public class Supporting
     /// "O" if player O has won,
     /// or an empty string if there is no winner.
     /// </returns>
-    public static string CheckWinner(string[] board)
+    public string CheckWinner(string[] board)
     {
         int[,] winningCombos =
         {
