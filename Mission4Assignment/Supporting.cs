@@ -53,7 +53,15 @@ public class Supporting
             if (first == second && second == third &&
                 (first == "X" || first == "O"))
             {
-                return first;
+               
+                if (first == "X")
+                {
+                    return "Player 1 Wins!";
+                }
+                else
+                {
+                    return "Player 2 Wins!";
+                }
             }
         }
 

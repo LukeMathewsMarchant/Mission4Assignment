@@ -54,7 +54,7 @@ do
     //Check if Player 1 won
     if (supporting.CheckWinner(board) != "")
     {
-        Console.WriteLine("Player 1 Wins!");
+        Console.WriteLine(supporting.CheckWinner(board));
     }
     // If they didn't win, then get Player 2s inputs. 
     else
@@ -79,8 +79,8 @@ do
             if (supporting.CheckWinner(board) != "")
             {
                 supporting.PrintBoard(board);
-                
-                Console.WriteLine("Player 2 Wins!");
+
+                Console.WriteLine(supporting.CheckWinner(board));
             }
 
         } while (isValid == false);
