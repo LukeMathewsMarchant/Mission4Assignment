@@ -78,12 +78,13 @@ do
             //Check if Player 2 won
             if (supporting.CheckWinner(board) != "")
             {
-                supporting.PrintBoard(board);
+                
 
                 Console.WriteLine(supporting.CheckWinner(board));
             }
 
         } while (isValid == false);
+        supporting.PrintBoard(board);
     }
     
     //Check if someone won and if so leave the loop
